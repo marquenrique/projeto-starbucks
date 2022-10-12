@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/starbucks.ico" type="image/x-icon">
+</head>
+<body>
+
+<section class="principal">
+   
+    <div class="circulo"></div>
+    
+    <header class="cabecalho">
+        <img class="logo" src="./assets/imgs/logo.png" alt="logo">
+        <div class="barra-menu" onclick="barraMenu();"></div>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Início</a></li>
+            <li class="menu-item"><a href="#">Menu</a></li>
+            <li class="menu-item"><a href="#">Sobre</a></li>
+            <li class="menu-item"><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    
+    <div class="conteudo">
+        <div class="texto">
+            <h2 class="textinho">Não é Café <br> É <span class="star">Starbucks</span></h2>
+            <p class="textao"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam dicta quas dignissimos dolorem ipsam similique
+                    inventore, praesentium incidunt voluptas reiciendis odit
+                    nisi fuga. Ex eius sequi dolorum.</p>
+            <a class="botao" href="#">Saiba mais</a>
+        </div>
+        
+        <div class="caixa-cafezao">
+            <img class="cafezao" src="./assets/imgs/img1.png" alt="cafe1">
+        </div>
+    
+    </div>
+    
+    <ul class="cafes">
+        <li class="cafe"><img class="cafeimg" src="./assets/imgs/img2.png" alt="cafe1" onclick="trocaCafe('./assets/imgs/img2.png'); trocaCor('#eb7495'); trocaTexto('#eb7495'); trocaBotao('#eb7495')"></li>
+        <li class="cafe"><img class="cafeimg" src="./assets/imgs/img1.png" alt="cafe2" onclick="trocaCafe('./assets/imgs/img1.png'); trocaCor('#017143'); trocaTexto('#017143'); trocaBotao('#017143')"></li>
+        <li class="cafe"><img class="cafeimg" src="./assets/imgs/img3.png" alt="cafe3" onclick="trocaCafe('./assets/imgs/img3.png'); trocaCor('#d752b1'); trocaTexto('#d752b1'); trocaBotao('#d752b1')"></li>
+    </ul>
+   
+    <ul class="redes">
+        <li><a href="#"><img  src="./assets/imgs/facebook.png" alt="rede1"></a></li> 
+        <li><a href="#"><img  src="./assets/imgs/twitter.png" alt="rede2"></a></li>
+        <li><a href="#"><img  src="./assets/imgs/instagram.png" alt="rede3"></a></li>
+    </ul>
+</section>
+    
+<script src="interacoes.js"></script>
+</body>
+</html>

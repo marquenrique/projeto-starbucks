@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    
+   
+}
+
+.principal{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+.cabecalho{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    position: relative;
+    max-width: 80px;
+    cursor: pointer;
+    
+    
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-item a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.conteudo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.texto{
+    position: relative;
+    bottom: 70px;
+    max-width: 600px;
+    
+    
+}
+
+.textinho{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.star{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.textao{
+    color: #333;
+
+}
+
+.botao{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #017143;
+    color: white;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+
+.caixa-cafezao{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.cafezao{
+    max-width: 340px;
+}
+
+.cafes{
+    position: absolute;
+    left: 40%;
+    bottom: 120px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.cafe{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cafe:hover{
+    transform: translateY(10px);
+}
+
+.cafeimg{
+    max-width: 80px;
+}
+
+.redes{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes li{
+    list-style: none;
+}
+
+.redes li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+@media (max-width: 990px){
+    *{
+        overflow:inherit;
+    }
+    
+    .principal{
+        padding: 20px 20px 110px;
+    }
+    
+    .cabecalho{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo{
+        position: relative;
+        max-width: 60px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-item a{
+        display: inline-block;
+        color: #333;
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 5px 0;
+        text-decoration: none;
+
+    }
+
+    .menu.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+
+    }
+
+    .barra-menu{
+        position: relative;
+        left: 180px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url(../assets/imgs/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: invert(1);
+        z-index: 11;
+    }
+
+    .barra-menu.active{
+        position: relative;
+        right: 20px;
+        background: url(../assets/imgs/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+
+    .conteudo{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    
+    .textinho{
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      
+    }
+
+    .texto{
+        max-width: 100%;
+    }
+
+    .caixa-cafezao{
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .cafezao{
+        max-width: 300px;
+    }
+
+    .cafeimg{
+        max-width: 60px;
+    }
+
+    .circulo{
+        clip-path: circle(400px at center bottom);
+    }
+
+    .cafes{
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+
+    .redes{
+        background: #017143;
+        right: 0;
+        width: 60px;
+        border-radius: 10px;
+        
+    }
+
+
+
+}
+
